@@ -31,6 +31,6 @@ long factorial(int num){
   if(num == 1){ //Si hemos llegado a que num es 1 devolvemos 1 como fin de la recursividad
     return 1;
   }else{
-    return (numero * factorial(num - 1));  // Calculamos el producto del num y el num-1 hasta llegar a 1 (nuestra condición final)
+    return (num * factorial(num - 1));  // Calculamos el producto del num y el num-1 hasta llegar a 1 (nuestra condición final)
   }
 }
