@@ -21,7 +21,7 @@ int main() {
     
     cout << "Escribe un numero" << endl;
     cin >> n;
-    if(par(n) == 0){
+    if(par(n) == 1){
         cout << "El numero " << n << " es par" << endl;
     }else{
         cout << "El numero " << n << " es impar" << endl;
@@ -32,7 +32,7 @@ int main() {
 
 int par(int n){
   if(n==0){
-    return 1;
+    return 1; // Un número par devuelve 1
   }else{
     return impar(n-1);
   }
@@ -40,7 +40,7 @@ int par(int n){
 
 int impar(int n){
   if(n==0){
-    return 0;
+    return 0; // Un número impar devuelve 0
   }else{
     return par(n-1);
   }
