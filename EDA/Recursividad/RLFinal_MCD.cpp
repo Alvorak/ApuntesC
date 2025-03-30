@@ -23,7 +23,7 @@ int main() {
     cin >> n1;
 
     cout << "Escribe el segundo numero" << endl;
-    cin << n2;
+    cin >> n2;
     
     cout << "El mcd(" << n1 << "," << n2 << ") es => " << mcd(n1,n2) << endl;
     
