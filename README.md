@@ -19,6 +19,6 @@ Las contribuciones son siempre bienvenidas. Si tienes algo que agregar o mejorar
 - **Programación II**: Conceptos fundamentales de C++11, manejo de memoria, clases, constructores y más.
 - **EDA (Estructuras de Datos y Algoritmos)**: Implementación y análisis de estructuras de datos como listas, pilas, colas, árboles y algoritmos de ordenación y búsqueda.
 
-Gracias por revisar y contribuir al repositorio. ¡Espero que te sea útil!\n
-Un saludo,\n
+Gracias por revisar y contribuir al repositorio. ¡Espero que te sea útil!
+Un saludo,
 **Alvorak**
