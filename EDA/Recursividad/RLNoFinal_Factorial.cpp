@@ -26,7 +26,7 @@ int main() {
     return 0;
 }
 
-long factorial(int num){
+long factorial(int num){ //5! = 5 * 4 * 3 * 2 * 1
   //Condicion Base
   if(num == 1){ //Si hemos llegado a que num es 1 devolvemos 1 como fin de la recursividad
     return 1;
