@@ -20,7 +20,7 @@ int main() {
     int n;
     
     cout << "Escribe un numero para calcular su factoria n!" << endl;
-    cin << n;
+    cin >> n;
     cout << "El factorial de " << n << " es => " << factorial(n) << endl;
     
     return 0;
