@@ -11,7 +11,7 @@ private:
 public:
     Reunion() : texto(""),categoria('M'),duracion(1){}
 
-    Reunion(string newTexto,char newCategoria, int newDuracion){
+    Reunion(string newTexto,char newCategoria, int newDuracion){ //Uso los set para no tener que insertar validaciones otra vez
         setTexto(newTexto);
         setCategoria(newCategoria);
         setDuracion(newDuracion);
