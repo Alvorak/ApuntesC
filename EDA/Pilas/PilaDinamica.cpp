@@ -31,6 +31,8 @@ class Nodo{ //Si ves un nodo => agarrate los machos que esto es dinamico
 };
 
 class Stack { //Llaman a PILA en clase STACK?
+    private:
+      shared_ptr<Nodo> front; //Aqui directamente puntero a front porque somos dinamicos, repito, no barbaros
     public:
     Stack():front(nullptr){} //Constructor por defecto con la pila vacia => al ser DINAMICO usamos nullptr
 
@@ -41,8 +43,7 @@ class Stack { //Llaman a PILA en clase STACK?
     void pop(); //Elimina el ultimo elemento de la pila -.-
     TipoDato top() const; //Te devuelvo lo que esta al final de la pila. Por eso empieza por TipoDato.
 
-    private:
-      shared_ptr<Nodo> front; //Aqui directamente puntero a front porque somos dinamicos, repito, no barbaros
+   
 };
 
 //Funciones de la Pila
