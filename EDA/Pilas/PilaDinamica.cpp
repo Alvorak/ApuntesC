@@ -47,6 +47,18 @@ class Stack { //Llaman a PILA en clase STACK?
 };
 
 //Funciones de la Pila
+//Determina el numero de elementos que tiene la pila sin destruirla
+int Stack::sizePila() const {
+   shared_ptr pAux(front);
+   int cont{0};
+
+   while(pAux != nullptr){
+       cont++;
+       pAux = pAux->getNext();
+   }
+
+   return cont;
+}
 
 bool Stack::empty() const{ 
     return (front == nullptr); //Es como si preguntaramos si front (el ultimo elemento de la pila) es el null (el elemento de la lista vacia) para saber si esta la pila vacia
