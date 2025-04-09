@@ -12,7 +12,7 @@ private:
     int paginas;
 public:
     //Constructor por defecto
-    Libro() : titulo(""),autores({""}), recomendado('-'), paginas(10) {} //Pongo 10 porque minimo ha de tener 10 paginas como validacion
+    Libro() : titulo(""), recomendado('-'), paginas(10) {} //Pongo 10 porque minimo ha de tener 10 paginas como validacion
     //Constructor paramétrico
     Libro(string newTitulo,vector<string> newAutores,char newRecomendado, int newPaginas){ //Como los setters ya tienen validaciones lo dejo asi
      setTitulo(newTitulo);
