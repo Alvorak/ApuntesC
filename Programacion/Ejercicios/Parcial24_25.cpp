@@ -23,15 +23,15 @@ public:
     //Constructor copia
     Libro (const Libro &libroACopiar) : titulo(libroACopiar.titulo), autores(libroACopiar.autores), recomendado(libroACopiar.recomendado), paginas(libroACopiar.paginas) {}
     //Getters
-    string getTitulo(){ return titulo; }
-    vector<string> getAutores() { return autores; }
-    char getRecomendado() { return recomendado; }
-    int getPaginas() { return paginas; }
+    const string &getTitulo() const { return titulo; }
+    const vector<string> &getAutores() const { return autores; }
+    char getRecomendado() const { return recomendado; }
+    int getPaginas() const { return paginas; }
     //Setters
-    void setTitulo(string newTitulo){
+    void setTitulo(const string &newTitulo) {
         titulo = newTitulo; //Sin validaciones
     }
-    void setPaginas(int &newPaginas){
+    void setPaginas(int newPaginas) {
         if(newPaginas < 10 || newPaginas > 500){
            throw 1; //Páginas fuera del rango lanzamos error
         }else{
@@ -45,7 +45,7 @@ public:
             recomendado = newRecomendado;
         }
     }
-    void setAutores(vector<string> &newAutores){
+    void setAutores(const vector<string> &newAutores) {
         for (string newAutor : newAutores) { //Por cada nuevo autor
             for (string autor : autores) {//Comprobamos que no esta ya dentro de los autores del libro
                 if(newAutor == autor){
