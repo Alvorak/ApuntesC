@@ -1,7 +1,7 @@
 #include <iostream>
 #include <windows.h>//Para los acentos
 #include <vector>
-//Written and Directed By Alvaro García Herrero
+//Written and Directed By Alvorak
 using namespace std;
 
 class Libro{
