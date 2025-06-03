@@ -86,8 +86,8 @@ int contarDatoCola(const Cola&Q, const TipoDato &elementoBuscado){
     while(!copia.empty()){ //Mientras no este vacia
         if(copia.first().num == elementoBuscado.num){ //Comparamos el num
             contador ++; //Sumamos uno
-            copia.pop(); //Quitamos el elemento y pasamos al siguiente
         }
+        copia.pop(); //Quitamos el elemento y pasamos al siguiente
     }
     return contador;
 }
